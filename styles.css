@@ -1,0 +1,98 @@
+/*
+ I certify that the CSS file I am submitting is all my own work.
+ None of it is copied from any source or any person.
+ Signed: Bryce Beeskow
+ Date: 1/26/2025
+*/
+/*
+ Author: Bryce Beeskow
+ Date: 1/26/2025
+ Class: CSC135
+ Project: Assignment 3
+ File Name: styles.css
+ Description: CSS of grid layout assignment
+*/
+/* Add references if applicable */
+/* Styling for whole document -- add comments throughout your file */ 
+
+/*styling for entire document*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: yellow;
+    
+}
+/*h2 styling*/
+h2{
+    color: tan;
+
+}
+/*header styling*/
+header{
+    background-color:black;
+    color: yellow;
+    text-align: center;
+    padding: 15px;
+}
+
+/*styling logo*/
+header .logo{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+/*main content grid*/
+main{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    padding: 20px;
+    background-color: gray;
+    text-align: center;
+    
+
+}
+
+/*styling mascot picture*/
+main .mascot{
+    width: 300px;
+    height: auto;
+    margin: 0;
+    align-items: center;
+    grid-row: span 2;
+}
+
+/*styling about us*/
+main .about-us{
+    grid-column: span 2;
+}
+
+/*styling athletics*/
+main .athletics{
+    grid-row: span 2;
+}
+
+/*styling campuslife*/
+main .campus-life{
+    grid-column: span 2;
+}
+
+/*grid-item styling*/
+.grid-item {
+    background-color: #563d2d;
+    padding: 20px;
+    border: 1px solid #563d2d;
+    text-align: center;
+}
+
+/*Footer styling*/
+footer{
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 1px;
+
+}
